@@ -31,7 +31,7 @@
 </head>
 <body>
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--hide-topbar u-header--sticky-top-md u-header--show-hide-md"
+  <header id="header" class="u-header u-header--hide-topbar u-header--sticky-top-md u-header--bg-transparent-md u-header--white-nav-links-md u-header--show-hide-md"
           data-header-fix-moment="500"
           data-header-fix-effect="slide">
     <!-- Search -->
@@ -854,44 +854,133 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Images Carousel Section -->
-    <div class="container-fluid">
-      <div class="js-slick-carousel u-slick"
-           data-autoplay="true"
-           data-speed="5000"
-           data-pagi-classes="text-center u-slick__pagination u-slick__pagination--white position-absolute right-0 bottom-0 left-0">
-        <div class="js-slide rounded bg-img-hero-center space-4" style="background-image: url(../../assets/img/1920x1080/img01.jpg);">
-          <div class="container">
-            <div class="w-lg-30">
-              <h4 class="display-4 text-white font-weight-semi-bold mb-3"
-                  data-scs-animation-in="fadeInUp">High<br>quality</h4>
-              <p class="lead text-white"
-                 data-scs-animation-in="fadeInUp">We aim high at being focused on hight quality materials.</p>
+    <!-- Hero v1 Section -->
+    <div class="u-hero-v1">
+  <!-- Hero Carousel Main -->
+  <div id="heroNav" class="js-slick-carousel u-slick"
+       data-autoplay="true"
+       data-speed="10000"
+       data-adaptive-height="true"
+       data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+       data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+       data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
+       data-numbered-pagination="#slickPaging"
+       data-nav-for="#heroNavThumb">
+    <div class="js-slide">
+      <!-- Slide #1 -->
+      <div class="d-lg-flex align-items-lg-center u-hero-v1__main" style="background-image: url(../../assets/img/1920x800/img2.jpg);">
+        <div class="container space-3 space-top-md-5 space-top-lg-3">
+          <div class="row">
+            <div class="col-md-8 col-lg-6 position-relative">
+              <span class="d-block h4 text-white font-weight-light mb-2"
+                    data-scs-animation-in="fadeInUp">
+                Front is a
+              </span>
+              <h1 class="text-white display-4 font-size-md-down-5 mb-0"
+                  data-scs-animation-in="fadeInUp"
+                  data-scs-animation-delay="200">
+                Self-<span class="font-weight-semi-bold">mastering</span> template
+              </h1>
             </div>
           </div>
         </div>
-        <div class="js-slide rounded bg-img-hero-center space-4" style="background-image: url(../../assets/img/1920x1080/img02.jpg);">
-          <div class="container">
-            <div class="w-lg-30">
-              <h4 class="display-4 text-white font-weight-semi-bold mb-3"
-                  data-scs-animation-in="fadeInUp">Soft<br>papers</h4>
-              <p class="lead text-white"
-                 data-scs-animation-in="fadeInUp">Using our creative gifts drives this foundation.</p>
-            </div>
-          </div>
-        </div>
-        <div class="js-slide rounded bg-img-hero-center space-4" style="background-image: url(../../assets/img/1920x1080/img03.jpg);">
-          <div class="container">
-            <div class="w-lg-30">
-              <h4 class="display-4 text-white font-weight-semi-bold mb-3"
-                  data-scs-animation-in="fadeInUp">Soft<br>papers</h4>
-              <p class="lead text-white"
-                 data-scs-animation-in="fadeInUp">Using our creative gifts drives this foundation.</p>
-            </div>
-          </div>
-        </div>
-        
       </div>
+      <!-- End Slide #1 -->
     </div>
+
+    <div class="js-slide">
+      <!-- Slide #2 -->
+      <div class="d-lg-flex align-items-lg-center u-hero-v1__main" style="background-image: url(../../assets/img/1920x800/img3.jpg);">
+        <div class="container space-3 space-top-md-5 space-top-lg-3">
+          <div class="row">
+            <div class="col-md-8 col-lg-6">
+              <span class="d-block h4 text-white font-weight-light mb-2"
+                    data-scs-animation-in="fadeInUp">
+                It is an
+              </span>
+              <h2 class="text-white display-4 font-size-md-down-5 mb-0"
+                  data-scs-animation-in="fadeInUp"
+                  data-scs-animation-delay="200">
+                <span class="font-weight-semi-bold">Easy</span> business with Front template
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Slide #2 -->
+    </div>
+  </div>
+  <!-- End Hero Carousel Main -->
+
+  <!-- Slick Paging -->
+  <div class="container position-relative">
+    <div id="slickPaging" class="u-slick__paging"></div>
+  </div>
+  <!-- End Slick Paging -->
+
+  <!-- Hero Carousel Secondary -->
+  <div id="heroNavThumb" class="js-slick-carousel u-slick"
+       data-autoplay="true"
+       data-speed="10000"
+       data-is-thumbs="true"
+       data-nav-for="#heroNav">
+    <div class="js-slide">
+      <!-- Slide #1 -->
+      <div class="d-flex align-items-center bg-white u-hero-v1__secondary">
+        <div class="container space-2">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="h5 text-muted">
+                <strong class="d-block">01.</strong>
+                <span class="d-block text-primary">Advanced editing</span>
+              </h3>
+              <p class="mb-0">Modify any aspect of your website or pages with Front.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 h-100 d-none d-lg-inline-block bg-primary u-hero-v1__last">
+          <div class="u-hero-v1__last-inner">
+            <h3 class="h5 text-white">
+              <strong class="u-hero-v1__last-next">Next:</strong> Fully responsive
+            </h3>
+            <p class="text-white-70 mb-0">Let visitors to view your content from their choice of device.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Slide #1 -->
+    </div>
+
+    <div class="js-slide">
+      <!-- Slide #2 -->
+      <div class="d-flex align-items-center bg-white u-hero-v1__secondary">
+        <div class="container space-2">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="h5 text-muted">
+                <strong class="d-block">02.</strong>
+                <span class="d-block text-danger">Fully responsive</span>
+              </h3>
+              <p class="mb-0">Let visitors to view your content from their choice of device.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 h-100 d-none d-lg-inline-block bg-danger u-hero-v1__last">
+          <div class="u-hero-v1__last-inner">
+            <h3 class="h5 text-white">
+              <strong class="u-hero-v1__last-prev">Prev:</strong> Advanced editing
+            </h3>
+            <p class="text-white-70 mb-0">Modify any aspect of your website with Front</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Slide #2 -->
+    </div>
+  </div>
+  <!-- End Hero Carousel Secondary -->
+    </div>
+    <!-- End Hero v1 Section -->
     <!-- End Images Carousel Section -->
 
     <!-- Icon Blocks Section -->
