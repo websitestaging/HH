@@ -242,12 +242,12 @@
                       data-unfold-hide-on-scroll="true"
                       data-unfold-animation-in="slideInUp"
                       data-unfold-animation-out="fadeOut">
-                <span class="fas fa-shopping-cart btn-icon__inner"></span>
+                <span class="fas fa-archive btn-icon__inner"></span>
               </a>
 
               <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right text-center p-7" aria-labelledby="shoppingCartDropdownInvoker" style="min-width: 250px;">
                 <span class="btn btn-icon btn-soft-primary rounded-circle mb-3">
-                  <span class="fas fa-shopping-basket btn-icon__inner"></span>
+                  <span class="fas fa-box btn-icon__inner"></span>
                 </span>
                 <span class="d-block">Your Cart is Empty</span>
               </div>
@@ -257,7 +257,7 @@
             <!-- Account Login -->
             <li class="list-inline-item">
               <a class="btn btn-xs btn-icon btn-text-secondary" href="../../html/account/dashboard.html">
-                <span class="fas fa-user-circle btn-icon__inner font-size-1"></span>
+                <span class="fas fa-box btn-icon__inner font-size-1"></span>
               </a>
             </li>
             <!-- End Account Login -->
@@ -923,7 +923,7 @@
               <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
                 <span class="fas fa-praying-hands fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
               </span>
-              <a href="../pages/hire-us.html"><h3 class="h5">Mental Afflictions</a></h3>
+              <a href="../pages/hire-us.html"><h3 class="h5">Mental Disorder </a></h3>
               <p class="mb-md-0">Practice of Siddha Yoga awakens Kundalini. Once awakened, the Kundalini brings about yogic kriyas which in turn free the body from all kind of diseases.</p>
             </div>
           </div>
@@ -933,7 +933,7 @@
               <span class="btn btn-icon btn-lg btn-soft-success rounded-circle mb-5">
                 <span class="fas fa-pray fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
               </span>
-              <a href="../pages/hire-us.html"><h3 class="h5">Spiritual Diseases</a></h3>
+              <a href="../pages/hire-us.html"><h3 class="h5">Spiritual Afflictions</a></h3>
               <p class="mb-md-0">Practice of Siddha Yoga awakens Kundalini. Once awakened, the Kundalini brings about yogic kriyas which in turn free the body from all kind of diseases.</p>
             </div>
           </div>
@@ -970,8 +970,9 @@
         </div>
         <!-- End Mockup Browser -->
   
-        <div class="w-50 w-md-40 w-lg-30 text-center mx-auto">
-          <p class="small">We are launching soon. Join the priority list for information and early access.</p>
+        <div class="w-90 w-md-80 w-lg-70 text-center mx-auto">
+          <p class="small">Those who haven't received <a href="../pages/hire-us.html">Diksha</a> from Guru SIyag can practice meditation by concentrating on Gurudev's photograph & chanting
+             silently any mantra or holy or spiritual word such as "Om", "Shiv", "Guru", "Allah", "Krishna", "Jesus".</p>
         </div>
     </div>
     <!-- End Introduction -->
@@ -1120,10 +1121,8 @@
                    data-parent="#ourStorySection">
             </figure>
           </div>  
-          <!-- End SVG Component -->
-        </div>
-    
-        
+          <!-- End SVG Component --> 
+        </div>       
     </div>
     <!--Online Initiation -->
 
@@ -1662,7 +1661,9 @@
            <div class="row justify-content-lg-between align-items-md-center space-2">
             <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
               <h3 class="text-white font-weight-medium mb-1">Ready to get started?</h3>
-              <p class="text-white-70 mb-0">Create your account and find your dream job.</p>
+              <p class="text-white-70 mb-0">Get relieved from <span class="text-warning">
+                <span class="u-text-animation-v2 u-text-animation-v2--typing"></span>
+                </span></p>
             </div>
       
             <div class="col-md-6 col-lg-5 text-md-right">
@@ -1709,6 +1710,7 @@
   <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
   <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../../assets/vendor/typed.js/lib/typed.min.js"></script>
   <script src="../../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
   <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
   <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
@@ -1774,6 +1776,15 @@
 
       // initialization of show animations
       $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of text animation (typing)
+      var typed = new Typed(".u-text-animation-v2.u-text-animation-v2--typing", {
+      strings: ["Physical Diseases.", "Mental Disorders.", "Spiritual Afflictions."],
+      typeSpeed: 60,
+      loop: true,
+      backSpeed: 25,
+      backDelay: 1500
+     });
 
       // initialization of popups
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
