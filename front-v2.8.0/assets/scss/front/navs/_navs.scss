@@ -78,6 +78,23 @@
 	}
 }
 
+/* White Border Color */
+.nav-border-white {
+	.nav-link {
+		color: $nav-border-white-nav-link-color;
+		border-bottom: $nav-border-white-nav-link-border-width $nav-border-white-nav-link-border-type $nav-border-white-nav-link-border-color;
+
+		&.active {
+			color: $nav-border-white-nav-link-active-color;
+			border-bottom-color: $nav-border-white-nav-link-border-active-color;
+		}
+
+		&:not(.active):hover {
+			color: $nav-border-white-nav-link-hover-color;
+		}
+	}
+}
+
 /* Box */
 .nav-box {
 	.nav-link {

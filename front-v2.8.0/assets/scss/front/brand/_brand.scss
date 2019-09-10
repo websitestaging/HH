@@ -23,3 +23,11 @@
     color: $brand-white-color;
   }
 }
+
+.brand-dark {
+  &,
+  &:focus,
+  &:hover {
+    color: $brand-dark-color;
+  }
+}

@@ -12,6 +12,12 @@
   }
 }
 
+a[href] {
+  .btn:not([href]):not([type]):not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+}
+
 label.btn {
   cursor: pointer !important;
 }

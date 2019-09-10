@@ -107,7 +107,8 @@
 @import "forms/states/success-state";
 @import "forms/states/error-state";
 @import "forms/bookmark/bookmark-checkbox";
-@import "forms/checkbox/checkbox-bordered";
+@import "forms/checkbox/checkbox-outline";
+@import "forms/checkbox/checkbox-icon";
 @import "forms/checkbox/checkbox-switch";
 @import "forms/checkbox/custom-checkbox";
 @import "forms/file-attachment/file-attachment-btn";
@@ -247,6 +248,7 @@
 @import "vendor/dzsparallaxer/dzsparallaxer";
 @import "vendor/fancybox/fancybox";
 @import "vendor/fileuploader/fileuploader";
+@import "vendor/onscroll-animation/onscroll-animation";
 @import "vendor/range-slider/range-slider";
 @import "vendor/select/select";
 @import "vendor/slick/slick";

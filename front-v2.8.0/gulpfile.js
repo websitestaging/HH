@@ -33,7 +33,7 @@ function errorLog(error) {
 //
 gulp.task('sass', function () {
  // Theme
- gulp.src('./assets/include/scss/**/*.scss')
+ gulp.src('./assets/scss/**/*.scss')
   .pipe(changed('./assets/css/'))
   .pipe(sass({ outputStyle: 'expanded' }))
   .on('error', sass.logError)
@@ -83,7 +83,7 @@ gulp.task('serve', function() {
 //
 //
 gulp.task('watch', function() {
-  gulp.watch('./assets/include/scss/**/*.scss', ['sass']);
+  gulp.watch('./assets/scss/**/*.scss', ['sass']);
   gulp.watch('./html/**/*.html').on('change', browserSync.reload);
   gulp.watch('./starter/**/*.html').on('change', browserSync.reload);
   gulp.watch('./documentation/**/*.html').on('change', browserSync.reload);

@@ -12,3 +12,13 @@
     border-top: (2 * $table-border-width) solid $table-border-highlighted-color;
   }
 }
+
+.table-light-bordered {
+  border-color: $table-border-light-color;
+
+  thead th,
+  th,
+  td {
+    border-color: $table-border-light-color;
+  }
+}

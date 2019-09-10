@@ -196,6 +196,8 @@
 							
 							$(el).data('HSUnfold').hide();
 							
+							$('.' + $(el).data('HSUnfold').config.unfoldOverlay.className).fadeOut($(el).data('HSUnfold').config.unfoldOverlay.animationSpeed ? $(el).data('HSUnfold').config.unfoldOverlay.animationSpeed : 200);
+							
 						});
 						
 						$('body').removeClass('u-unfold-opened');

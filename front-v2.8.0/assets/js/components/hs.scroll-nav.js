@@ -312,7 +312,7 @@
           offset = self.section.offset().top;
 
 
-        if (header.length && headerPosition == 'fixed' && parseInt(headerStyles.top) == 0) {
+        if (header.length && (headerPosition == 'fixed' || headerPosition == 'absolute') && parseInt(headerStyles.top) == 0) {
           offset = offset - header.outerHeight() - parseInt(headerStyles.marginTop);
         }
 
