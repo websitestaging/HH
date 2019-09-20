@@ -32,7 +32,7 @@
 </head>
 <body>
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--hide-topbar u-header--sticky-top-md u-header--show-hide-md"
+  <header id="header" class="u-header u-header--hide-topbar u-header--sticky-top-md u-header--show-hide-md "
           data-header-fix-moment="500"
           data-header-fix-effect="slide">
     <!-- Search -->
@@ -147,33 +147,7 @@
     <div class="u-header__section">
       <!-- Topbar -->
       <div class="container pt-2">
-        <div class="d-flex align-items-center">
-          <!-- Language -->
-          <div class="position-relative">
-            <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-               aria-controls="languageDropdown"
-               aria-haspopup="true"
-               aria-expanded="false"
-               data-unfold-event="hover"
-               data-unfold-target="#languageDropdown"
-               data-unfold-type="css-animation"
-               data-unfold-duration="300"
-               data-unfold-delay="300"
-               data-unfold-hide-on-scroll="true"
-               data-unfold-animation-in="slideInUp"
-               data-unfold-animation-out="fadeOut">
-               <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
-              <span class="d-inline-block d-sm-none">En</span>
-              <span class="d-none d-sm-inline-block">English</span>
-            </a>
-
-            <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
-              <a class="dropdown-item active" href="#">Hindi</a>
-              <a class="dropdown-item" href="#">Deutsch</a>
-              <a class="dropdown-item" href="#">Español‎</a>
-            </div>
-          </div>
-          <!-- End Language -->
+        <div class="d-flex align-items-center">   
 
           <div class="ml-auto">
             
@@ -209,6 +183,44 @@
                 </a>
             </li>
             <!-- End Guru Dakshina -->
+
+            <!-- Language Login -->
+            <li class="list-inline-item position-relative">
+                <!-- Language Dropdown -->
+                <a id="languageDropdownInvoker" class="btn btn-xs btn-text-secondary u-sidebar--account__toggle-bg" href="javascript:;" role="button"
+                   aria-controls="languageDropdown"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   data-unfold-event="hover"
+                   data-unfold-target="#languageDropdown"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-delay="300"
+                   data-unfold-hide-on-scroll="true"
+                   data-unfold-animation-in="slideInUp"
+                   data-unfold-animation-out="fadeOut">
+                  <span class="u-sidebar--account__toggle-text d-inline-block d-sm-none">En</span>
+                  <span class="d-none d-sm-inline-block u-sidebar--account__toggle-text">English</span>
+                  <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
+                </a>
+                <!-- End Language Dropdown -->
+  
+                <div id="languageDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-sm-right" aria-labelledby="languageDropdownInvoker">
+                  <a class="dropdown-item" href="#">
+                    <span class="fas fa-user-circle dropdown-item-icon"></span>
+                    Profile
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="fas fa-cog dropdown-item-icon"></span>
+                    Settings
+                  </a>
+                  <a class="dropdown-item" href="javascript:;">
+                    <span class="fas fa-sign-out-alt dropdown-item-icon"></span>
+                    Sign Out
+                  </a>
+                </div>
+            </li>
+            <!-- End Language Login -->
 
           </ul>
         </div>
@@ -861,7 +873,7 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Images Carousel Section -->
-    <div class="container-fluid space-top-md-2 space-top-lg-2 space-top-sm- space-top-sm-0">
+    <div class="container-fluid space-top-md-2 space-top-lg-2 space-top-xl-2 space-top-sm-0">
     <div class="js-slick-carousel u-slick"
        data-autoplay="true"
        data-speed="5000"
