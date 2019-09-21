@@ -32,7 +32,7 @@
 </head>
 <body>
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--hide-topbar u-header--sticky-top-md u-header--show-hide-md"
+  <header id="header" class="u-header u-header--hide-topbar u-header--sticky-top-md u-header--show-hide-md "
           data-header-fix-moment="500"
           data-header-fix-effect="slide">
     <!-- Search -->
@@ -147,71 +147,10 @@
     <div class="u-header__section">
       <!-- Topbar -->
       <div class="container pt-2">
-        <div class="d-flex align-items-center">
-          <!-- Language -->
-          <div class="position-relative">
-            <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-               aria-controls="languageDropdown"
-               aria-haspopup="true"
-               aria-expanded="false"
-               data-unfold-event="hover"
-               data-unfold-target="#languageDropdown"
-               data-unfold-type="css-animation"
-               data-unfold-duration="300"
-               data-unfold-delay="300"
-               data-unfold-hide-on-scroll="true"
-               data-unfold-animation-in="slideInUp"
-               data-unfold-animation-out="fadeOut">
-               <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
-              <span class="d-inline-block d-sm-none">En</span>
-              <span class="d-none d-sm-inline-block">English</span>
-            </a>
-
-            <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
-              <a class="dropdown-item active" href="#">Hindi</a>
-              <a class="dropdown-item" href="#">Deutsch</a>
-              <a class="dropdown-item" href="#">Español‎</a>
-            </div>
-          </div>
-          <!-- End Language -->
+        <div class="d-flex align-items-center">   
 
           <div class="ml-auto">
-            <!-- Jump To -->
-            <div class="d-inline-block d-sm-none position-relative mr-2">
-              <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-                 aria-controls="jumpToDropdown"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-unfold-event="hover"
-                 data-unfold-target="#jumpToDropdown"
-                 data-unfold-type="css-animation"
-                 data-unfold-duration="300"
-                 data-unfold-delay="300"
-                 data-unfold-hide-on-scroll="true"
-                 data-unfold-animation-in="slideInUp"
-                 data-unfold-animation-out="fadeOut">
-                Jump to
-              </a>
-
-              <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
-                <a class="dropdown-item" href="../../html/home/media.html">Media</a>
-                <a class="dropdown-item" href="../../html/home/contact.html">Contact Us</a>
-              </div>
-            </div>
-            <!-- End Jump To -->
-
-            <!-- Links -->
-            <div class="d-none d-sm-inline-block ml-sm-auto">
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item mr-0">
-                  <a class="u-header__navbar-link" href="../../html/home/media.html">Media</a>
-                </li>
-                <li class="list-inline-item mr-0">
-                  <a class="u-header__navbar-link" href="../../html/home/contact.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <!-- End Links -->
+            
           </div>
 
           <ul class="list-inline ml-2 mb-0">   
@@ -228,14 +167,6 @@
               </a>
             </li>
             <!-- End Search -->
-      
-            <!-- Facebook Topbar -->
-            <li class="list-inline-item">
-                <a class="btn btn-xs btn-icon btn-text-secondary" href="../../html/home/gurudakshina.html">
-                  <span class="fab fa-facebook btn-icon__inner font-size-1"></span>
-                </a>
-            </li>
-            <!-- End Facebook Topbar -->
 
             <!-- Youtube Topbar -->
             <li class="list-inline-item">
@@ -245,14 +176,6 @@
             </li>
             <!-- End Youtube Topbar -->
 
-            <!-- Twitter Topbar -->
-            <li class="list-inline-item">
-                <a class="btn btn-xs btn-icon btn-text-secondary" href="../../html/home/gurudakshina.html">
-                  <span class="fab fa-twitter btn-icon__inner font-size-1"></span>
-                </a>
-            </li>
-            <!-- End Twitter Topbar -->
-
             <!-- Guru Dakshina -->
             <li class="list-inline-item">
                 <a class="btn btn-xs btn-icon btn-text-secondary" href="../../html/home/gurudakshina.html">
@@ -260,6 +183,41 @@
                 </a>
             </li>
             <!-- End Guru Dakshina -->
+
+            <!-- Language Login -->
+            <li class="list-inline-item position-relative">
+                <!-- Language Dropdown -->
+                <a id="languageDropdownInvoker" class="btn btn-xs btn-text-secondary u-sidebar--account__toggle-bg" href="javascript:;" role="button"
+                   aria-controls="languageDropdown"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   data-unfold-event="hover"
+                   data-unfold-target="#languageDropdown"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-delay="300"
+                   data-unfold-hide-on-scroll="true"
+                   data-unfold-animation-in="slideInUp"
+                   data-unfold-animation-out="fadeOut">
+                  <span class="u-sidebar--account__toggle-text d-inline-block d-sm-none">En</span>
+                  <span class="d-none d-sm-inline-block u-sidebar--account__toggle-text">English</span>
+                  <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
+                </a>
+                <!-- End Language Dropdown -->
+  
+                <div id="languageDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-sm-right" aria-labelledby="languageDropdownInvoker">
+                  <a class="dropdown-item" href="#">
+                    Hindi
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Deutsch
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Español‎
+                  </a>
+                </div>
+            </li>
+            <!-- End Language Login -->
 
           </ul>
         </div>
@@ -898,7 +856,7 @@
                 </div>
                 <!-- End Others - Mega Menu -->
               </li>
-              <!-- End Others --          
+              <!-- End Others -->          
             </ul>
           </div>
           <!-- End Navigation -->
@@ -912,8 +870,8 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Images Carousel Section -->
-    <div class="container-fluid">
-  <div class="js-slick-carousel u-slick"
+    <div class="container-fluid space-top-md-2 space-top-lg-2 space-top-xl-2 space-top-sm-0">
+    <div class="js-slick-carousel u-slick"
        data-autoplay="true"
        data-speed="5000"
        data-pagi-classes="text-center u-slick__pagination u-slick__pagination--white position-absolute right-0 bottom-0 left-0">
@@ -947,7 +905,7 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
     </div>
     <!-- End Images Carousel Section -->
 
@@ -955,7 +913,7 @@
     <div class="container space-top-2  ">
       <!-- Title -->
       <div class="w-md-80 w-lg-90 text-center mx-md-auto mb-9">
-          <span class="btn btn-xs btn-soft-success btn-pill mb-2">Welcome to Gurudev Siyag's Siddha Yoga</span>
+          <span class="btn btn-xs btn-soft-primary btn-pill mb-2">Welcome to Gurudev Siyag's Siddha Yoga</span>
           <a href="../../html/home/welcometogssy.html"><h2 class="text-primary">What is <span class="font-weight-semi-bold">Guru Siyag's Siddha Yoga</span></h2></a>
           <p class="mb-0">GSSY is a chanting based yoga which has has come from the ancestral masters of the ‘Nath Sect’ as it includes other types of Yoga also called as Mahayoga. By the awakening of Kundalini, the practioner is 
               relieved from Physical, Mental and Spiritual Afflictions as well as from the cycle of birth & death.</p>
