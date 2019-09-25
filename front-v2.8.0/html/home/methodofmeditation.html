@@ -33,7 +33,7 @@
 </head>
 <body>
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--hide-topbar u-header--sticky-top-md u-header--show-hide-md"
+  <header id="header" class="u-header u-header--hide-topbar u-header--sticky-top-md u-header--show-hide-md "
           data-header-fix-moment="500"
           data-header-fix-effect="slide">
     <!-- Search -->
@@ -148,74 +148,14 @@
     <div class="u-header__section">
       <!-- Topbar -->
       <div class="container pt-2">
-        <div class="d-flex align-items-center">
-          <!-- Language -->
-          <div class="position-relative">
-            <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-               aria-controls="languageDropdown"
-               aria-haspopup="true"
-               aria-expanded="false"
-               data-unfold-event="hover"
-               data-unfold-target="#languageDropdown"
-               data-unfold-type="css-animation"
-               data-unfold-duration="300"
-               data-unfold-delay="300"
-               data-unfold-hide-on-scroll="true"
-               data-unfold-animation-in="slideInUp"
-               data-unfold-animation-out="fadeOut">
-               <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
-              <span class="d-inline-block d-sm-none">En</span>
-              <span class="d-none d-sm-inline-block">English</span>
-            </a>
-
-            <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
-              <a class="dropdown-item active" href="#">Hindi</a>
-              <a class="dropdown-item" href="#">Deutsch</a>
-              <a class="dropdown-item" href="#">Español‎</a>
-            </div>
-          </div>
-          <!-- End Language -->
+        <div class="d-flex align-items-center">   
 
           <div class="ml-auto">
-            <!-- Jump To -->
-            <div class="d-inline-block d-sm-none position-relative mr-2">
-              <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
-                 aria-controls="jumpToDropdown"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-unfold-event="hover"
-                 data-unfold-target="#jumpToDropdown"
-                 data-unfold-type="css-animation"
-                 data-unfold-duration="300"
-                 data-unfold-delay="300"
-                 data-unfold-hide-on-scroll="true"
-                 data-unfold-animation-in="slideInUp"
-                 data-unfold-animation-out="fadeOut">
-                Jump to
-              </a>
-
-              <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
-                <a class="dropdown-item" href="../../html/home/media.html">Media</a>
-                <a class="dropdown-item" href="../../html/home/contact.html">Contact Us</a>
-              </div>
-            </div>
-            <!-- End Jump To -->
-
-            <!-- Links -->
-            <div class="d-none d-sm-inline-block ml-sm-auto">
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item mr-0">
-                  <a class="u-header__navbar-link" href="../../html/home/media.html">Media</a>
-                </li>
-                <li class="list-inline-item mr-0">
-                  <a class="u-header__navbar-link" href="../../html/home/contact.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <!-- End Links -->
+            
           </div>
 
-          <ul class="list-inline ml-2 mb-0">
+          <ul class="list-inline ml-2 mb-0">   
+
             <!-- Search -->
             <li class="list-inline-item">
               <a class="btn btn-xs btn-icon btn-text-secondary" href="javascript:;" role="button"
@@ -228,14 +168,65 @@
               </a>
             </li>
             <!-- End Search -->
-      
+
+            <!-- Youtube Topbar -->
+            <li class="list-inline-item">
+                <a class="btn btn-xs btn-icon btn-text-secondary" href="../../html/home/gurudakshina.html">
+                  <span class="fab fa-youtube btn-icon__inner font-size-1 "></span>
+                </a>
+            </li>
+            <!-- End Youtube Topbar -->
+
+            <!-- Contact Us Topbar -->
+            <li class="list-inline-item">
+                <a class="btn btn-xs btn-icon btn-text-secondary" href="../../html/home/contact.html">
+                  <span class="fa fa-map-marker-alt btn-icon__inner font-size-1" ></span>
+                </a>
+            </li>
+            <!-- End Contact Us Topbar -->
+
             <!-- Guru Dakshina -->
             <li class="list-inline-item">
-              <a class="btn btn-xs btn-icon btn-text-secondary" href="../../html/home/gurudakshina.html">
-                <span class="fas fa-hands btn-icon__inner font-size-1"></span>
-              </a>
+                <a class="btn btn-xs btn-icon btn-text-secondary" href="../../html/home/gurudakshina.html">
+                  <span class="fas fa-hands btn-icon__inner font-size-1"></span>
+                </a>
             </li>
             <!-- End Guru Dakshina -->
+
+            <!-- Language Login -->
+            <li class="list-inline-item position-relative">
+                <!-- Language Dropdown -->
+                <a id="languageDropdownInvoker" class="btn btn-xs btn-text-secondary u-sidebar--account__toggle-bg" href="javascript:;" role="button"
+                   aria-controls="languageDropdown"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   data-unfold-event="hover"
+                   data-unfold-target="#languageDropdown"
+                   data-unfold-type="css-animation"
+                   data-unfold-duration="300"
+                   data-unfold-delay="300"
+                   data-unfold-hide-on-scroll="true"
+                   data-unfold-animation-in="slideInUp"
+                   data-unfold-animation-out="fadeOut">
+                  <span class="u-sidebar--account__toggle-text d-inline-block d-sm-none">En</span>
+                  <span class="d-none d-sm-inline-block u-sidebar--account__toggle-text">English</span>
+                  <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
+                </a>
+                <!-- End Language Dropdown -->
+  
+                <div id="languageDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right" aria-labelledby="languageDropdownInvoker">
+                  <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/in.svg" alt="SVG">
+                    Hindi
+                  </a>
+                  <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/fr.svg" alt="SVG">
+                    French
+                  </a>
+                  <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/il.svg" alt="SVG">
+                    Hebrew
+                  </a>
+                </div>
+            </li>
+            <!-- End Language Login -->
 
           </ul>
         </div>
@@ -645,6 +636,36 @@
                         </div>
                         <!-- End Meaning of Prophecies in the Bible Item -->
                       </div>
+
+                      <div class="u-header__promo-card-deck">
+                          <!-- Predictions by Maharishi Aurobindo and Maa Item -->
+                          <div class="u-header__promo-card u-header__promo-item">
+                              <a class="u-header__promo-link" href="../../html/home/gurusiyagprophecies.html">
+                                <div class="media align-items-center">
+                                    
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">Predictions by Maharishi Aurobindo and Maa</span>
+                                    <small class="u-header__promo-text">Find out more about predictions by Maharishi Aurobindo and Maa</small>
+                                  </div>
+                                </div>
+                              </a>
+                          </div>
+                          <!-- End Predictions by Maharishi Aurobindo and Maa Item -->
+  
+                          <!-- Swami Vivekanand Ji's Predictions Item -->
+                          <div class="u-header__promo-card u-header__promo-item">
+                              <a class="u-header__promo-link" href="../../html/home/biblepropheciesmeaning.html">
+                                <div class="media align-items-center">
+                                 
+                                  <div class="media-body">
+                                    <span class="u-header__promo-title">Swami Vivekanand Ji's Predictions</span>
+                                    <small class="u-header__promo-text">Find out more about Swami Vivekanand Ji's predictions</small>
+                                  </div>
+                                </div>
+                              </a>
+                          </div>
+                          <!-- End Swami Vivekanand Ji's Predictions Item -->
+                      </div>
                     </div>  
                   </div>
                 </div>
@@ -874,7 +895,7 @@
                 </div>
                 <!-- End Others - Mega Menu -->
               </li>
-              <!-- End Others --          
+              <!-- End Others -->          
             </ul>
           </div>
           <!-- End Navigation -->
@@ -925,7 +946,7 @@
           </li>
           <!-- End Info Block -->
   
-          <!-- Info Block -->
+          <!-- Info Block --> 
           <li class="u-indicator-steps py-1">
             <div class="media align-items-center border rounded p-4">
               <div class="d-flex u-indicator-steps__inner mr-3">
@@ -1097,9 +1118,7 @@
               </a>
               <!-- End Logo -->
     
-             <p class="small text-white-70">A registered charity in Canada / 8534 23192 RR0001 © ONE DROP™. All rights reserved. 550 Beaumont, Suite 400, Montreal QC H3N 1V1
-               
-             </p>
+             <p class="small text-white-70">A registered charity in India 09/1993/-10-05-1993 © 1997-2019 Adhyatma Satsang Vigyan Kendra (AVSK). All rights reserved.</p>
     
              
   
@@ -1133,28 +1152,80 @@
                 </ul>
                 <!-- End Social Networks -->
             </div>
-          </div>
-  
-          
+          </div>      
         </div>
-  
+
+        <!-- CTA -->
+        <div class="row justify-content-lg-between align-items-md-center space-0 space-bottom-1">
+            <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
+              <h3 class="text-white font-weight-medium mb-1">Ready to get started?</h3>
+              <p class="text-white-70 mb-0">Get relieved from <span class="text-warning">
+                <span class="u-text-animation-v2 u-text-animation-v2--typing"></span>
+                </span></p>
+            </div>
+      
+            <div class="col-md-6 col-lg-5 text-md-right">
+              <a class="btn btn-success btn-wide transition-3d-hover mb-1 mb-sm-0 mr-sm-1" href="../home/sanjeewanimantra.html">Get the Divine Mantra</a>
+              <a class="btn text-primary btn-white btn-wide transition-3d-hover mb-1 mb-sm-0" href="../home/methodofmeditation.html">Method of Meditation</a>
+            </div>
+        </div>
+        <!-- End CTA -->
+
         <hr class="opacity-md my-0">
   
-         <!-- CTA -->
-         <div class="row justify-content-lg-between align-items-md-center space-2">
-          <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
-            <h3 class="text-white font-weight-medium mb-1">Ready to get started?</h3>
-            <p class="text-white-70 mb-0">Get relieved from <span class="text-warning">
-              <span class="u-text-animation-v2 u-text-animation-v2--typing"></span>
-              </span></p>
-          </div>
-    
-          <div class="col-md-6 col-lg-5 text-md-right">
-            <a class="btn btn-success btn-wide transition-3d-hover mb-1 mb-sm-0 mr-sm-1" href="../home/sanjeewanimantra.html">Get the Divine Mantra</a>
-            <a class="btn text-primary btn-white btn-wide transition-3d-hover mb-1 mb-sm-0" href="../home/methodofmeditation.html">Method of Meditation</a>
-          </div>
-         </div>
-         <!-- End CTA -->
+        <div class="row space-2">
+            <div class="col-md-4 mb-7 mb-md-0">
+              <!-- Call -->
+              <div class="media">
+                <span class="btn btn-icon btn-soft-white rounded-circle mr-3">
+                  <span class="fas fa-phone btn-icon__inner"></span>
+                </span>
+                <div class="media-body">
+                    <h4 class="h6 text-white font-weight-normal mb-0">Call us</h4>
+                  <span class="d-block text-white font-size-1">+91 (291) 275-3699</span>
+                  <span class="d-block text-white font-size-1">+91 9784742595</span>
+                  <span class="d-block text-white font-size-1">+91 9983293799</span>
+                </div>
+              </div>
+              <!-- End Call -->
+            </div>
+        
+            <div class="col-md-4 mb-7 mb-md-0">
+              <!-- Email -->
+              <div class="media">
+                <span class="btn btn-icon btn-soft-white rounded-circle mr-3">
+                  <span class="fas fa-envelope btn-icon__inner"></span>
+                </span>
+                <div class="media-body">
+                  <h4 class="h6 text-white font-weight-normal mb-0">Email us</h4>
+                  <span class="d-block text-white font-size-1">avsk@the-comforter.org</span>
+                </div>
+              </div>
+              <!-- End Email -->
+            </div>
+        
+            <div class="col-md-4">
+              <!-- Address -->
+              <div class="media">
+                <span class="btn btn-icon btn-soft-white rounded-circle mr-3">
+                  <span class="fas fa-map-marker-alt btn-icon__inner"></span>
+                </span>
+                <div class="media-body">
+                  <h4 class="h6 text-white font-weight-normal mb-0">Address</h4>
+                  <span class="d-block text-white font-size-1">Adhyatma Vigyan Satsang Kendra</span>
+                  <span class="d-block text-white font-size-1">Near Hotel Lariya, Chaupasani</span>
+                  <span class="d-block text-white font-size-1">Post Box No. 41</span>
+                  <span class="d-block text-white font-size-1">Jodhpur - 342 003, INDIA</span>
+                </div>
+              </div>
+              <!-- End Address -->
+            </div>           
+        </div>
+
+        <div class="row ">
+            <p class="small col-md-12 text-white-70">The website <a class="link-muted text-white" href="#">www.the-comforter.org</a> was launched by Gurudev on Christmas, Thursday, Dec 25, 1997 to benefit the entire human race through Siddha Yoga. 
+              This website has complete information about Gurudev Siyag’s mission.</p>
+        </div>
       </div>
   
   
