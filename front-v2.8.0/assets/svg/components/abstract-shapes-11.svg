@@ -35,7 +35,7 @@
 						<clipPath id="abstractShapes11_4">
 							<use xlink:href="#abstractShapes11_3" style="overflow:visible;"/>
 						</clipPath>
-						<path class="abstract-shapes-11-1 fill-none stroke-white" stroke-width="3" stroke-miterlimit="10" clip-path="url(#abstractShapes11_4)" d="M28.3,72.9c0,0-13.6,17.3,11.5,49s2.8,66.3,2.8,66.3"/>
+						<path class="abstract-shapes-11-1 fill-none stroke-white" stroke-width="1" stroke-miterlimit="10" clip-path="url(#abstractShapes11_4)" d="M28.3,72.9c0,0-13.6,17.3,11.5,49s2.8,66.3,2.8,66.3"/>
 					</g>
 				</g>
 			</g>
@@ -54,7 +54,7 @@
 						<clipPath id="abstractShapes11_6">
 							<use xlink:href="#abstractShapes11_5" style="overflow:visible;"/>
 						</clipPath>
-						<path class="abstract-shapes-11-1 fill-none stroke-white" stroke-width="3" stroke-miterlimit="10" clip-path="url(#abstractShapes11_6)" d="M44,62.4c0,0-13.6,17.3,11.5,49s2.8,66.3,2.8,66.3"/>
+						<path class="abstract-shapes-11-1 fill-none stroke-white" stroke-width="1" stroke-miterlimit="10" clip-path="url(#abstractShapes11_6)" d="M44,62.4c0,0-13.6,17.3,11.5,49s2.8,66.3,2.8,66.3"/>
 					</g>
 				</g>
 			</g>
@@ -73,7 +73,7 @@
 						<clipPath id="abstractShapes11_8">
 							<use xlink:href="#abstractShapes11_7" style="overflow:visible;"/>
 						</clipPath>
-						<path class="abstract-shapes-11-1 fill-none stroke-white" stroke-width="3" stroke-miterlimit="10" clip-path="url(#abstractShapes11_8)" d="M55,14.3c0,0-16.6,21.3,14.6,60.5c31.2,39.4,4.2,81.7,4.2,81.7"/>
+						<path class="abstract-shapes-11-1 fill-none stroke-white" stroke-width="1" stroke-miterlimit="10" clip-path="url(#abstractShapes11_8)" d="M55,14.3c0,0-16.6,21.3,14.6,60.5c31.2,39.4,4.2,81.7,4.2,81.7"/>
 					</g>
 				</g>
 			</g>
@@ -92,7 +92,7 @@
 						<clipPath id="abstractShapes11_10">
 							<use xlink:href="#abstractShapes11_9" style="overflow:visible;"/>
 						</clipPath>
-						<path class="abstract-shapes-11-1 fill-none stroke-white" stroke-width="3" stroke-miterlimit="10" clip-path="url(#abstractShapes11_10)" d="M88.8,5.4c0,0-16.6,21.3,14.6,60.5c31.2,39.3,4.2,81.7,4.2,81.7"/>
+						<path class="abstract-shapes-11-1 fill-none stroke-white" stroke-width="1" stroke-miterlimit="10" clip-path="url(#abstractShapes11_10)" d="M88.8,5.4c0,0-16.6,21.3,14.6,60.5c31.2,39.3,4.2,81.7,4.2,81.7"/>
 					</g>
 				</g>
 			</g>
