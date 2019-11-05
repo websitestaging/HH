@@ -20,12 +20,14 @@
   <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
   <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="../../assets/vendor/chartist/dist/chartist.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/chartist-js-tooltip/chartist-plugin-tooltip.css">
   <link rel="stylesheet" href="../../assets/vendor/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="../../assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
   <link rel="stylesheet" href="../../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
   <link rel="stylesheet" href="../../documentation/assets/vendor/prism/prism.css">
-  <link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css">
-  <link rel="stylesheet" href="../../assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
-  <link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css">
+
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../../assets/css/theme.css">
@@ -1188,8 +1190,8 @@
 
                 <!-- Content -->
                 <div class="cbp mb-7" data-controls="#filterControls1" data-animation="quicksand" data-x-gap="16"
-                  data-y-gap="16" data-load-more-selector="#cubeLoadMore" data-load-more-action="auto"
-                  data-load-items-amount="2" data-media-queries='[
+                  data-y-gap="16" data-load-more-selector="#cubeLoadMore" data-load-more-action="click"
+                  data-load-items-amount="9" data-media-queries='[
                 {"width": 1500, "cols": 4},
                 {"width": 1100, "cols": 4},
                 {"width": 800, "cols": 3},
@@ -1248,7 +1250,8 @@
 
                 <!-- Load More Button -->
                 <div id="cubeLoadMore" class="text-center">
-                  <a class="cbp-l-loadMore-link link" rel="nofollow">
+                  <a href="../../assets/ajax/photogallery-l/load-more.html" class="cbp-l-loadMore-link link"
+                    rel="nofollow">
                     <span class="cbp-l-loadMore-defaultText">
                       Load More
                       <span class="link__icon ml-1">
@@ -1658,10 +1661,14 @@
 
   <!-- JS Implementing Plugins -->
   <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
   <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
-  <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
   <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="../../assets/vendor/chartist/dist/chartist.min.js"></script>
+  <script src="../../assets/vendor/chartist-js-tooltip/chartist-plugin-tooltip.js"></script>
+  <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="../../assets/vendor/appear.js"></script>
+  <script src="../../assets/vendor/circles/circles.min.js"></script>
   <script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
   <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="../../assets/vendor/typed.js/lib/typed.min.js"></script>
@@ -1671,23 +1678,23 @@
   <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
   <script src="../../documentation/assets/vendor/prism/prism.js"></script>
 
-
   <!-- JS Front -->
   <script src="../../assets/js/hs.core.js"></script>
   <script src="../../assets/js/components/hs.header.js"></script>
   <script src="../../assets/js/components/hs.unfold.js"></script>
-  <script src="../../assets/js/components/hs.cubeportfolio.js"></script>
-  <script src="../../assets/js/components/hs.focus-state.js"></script>
   <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../../assets/js/components/hs.fancybox.js"></script>
+  <script src="../../assets/js/components/hs.chartist-area-chart.js"></script>
+  <script src="../../assets/js/components/hs.slick-carousel.js"></script>
+  <script src="../../assets/js/components/hs.cubeportfolio.js"></script>
+  <script src="../../assets/js/components/hs.chart-pie.js"></script>
+  <script src="../../assets/js/components/hs.svg-injector.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/components/hs.focus-state.js"></script>
   <script src="../../assets/js/components/hs.validation.js"></script>
   <script src="../../assets/js/components/hs.show-animation.js"></script>
-  <script src="../../assets/js/components/hs.fancybox.js"></script>
-  <script src="../../assets/js/components/hs.svg-injector.js"></script>
-  <script src="../../assets/js/components/hs.slick-carousel.js"></script>
-  <script src="../../assets/js/components/hs.go-to.js"></script>
   <script src="../../assets/js/components/hs.sticky-block.js"></script>
   <script src="../../assets/js/components/hs.scroll-nav.js"></script>
-
 
   <!-- JS Plugins Init. -->
   <script>
@@ -1707,7 +1714,6 @@
       $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
         duration: 700
       });
-
     });
 
     $(document).on('ready', function () {
@@ -1715,26 +1721,25 @@
       $.HSCore.components.HSHeader.init($('#header'));
 
       // initialization of unfold component
-      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
-        afterOpen: function () {
-          $(this).find('input[type="search"]').focus();
-        }
-      });
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
 
-      // initialization of malihu scrollbar
-      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      // initialization of chartist area charts
+      $.HSCore.components.HSChartistAreaChart.init('.js-area-chart');
 
-      // initialization of forms
-      $.HSCore.components.HSFocusState.init();
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
 
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate', {
-        rules: {
-          confirmPassword: {
-            equalTo: '#signupPassword'
-          }
-        }
-      });
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+      // initialization of cubeportfolio
+      $.HSCore.components.HSCubeportfolio.init('.cbp');
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of sticky blocks
+      $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
 
       // initialization of show animations
       $.HSCore.components.HSShowAnimation.init('.js-animation-link');
@@ -1751,17 +1756,26 @@
       // initialization of popups
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
 
-      // initialization of slick carousel
-      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+      // initialization of malihu scrollbar
+      var windW = window.innerWidth;
 
-      // initialization of sticky blocks
-      $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+      if (windW < 768) {
+        $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      }
 
-      // initialization of cubeportfolio
-      $.HSCore.components.HSCubeportfolio.init('.cbp');
+      // initialization of chart pies
+      var items = $.HSCore.components.HSChartPie.init('.js-pie');
+    });
 
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
+    $(window).on('resize', function () {
+      // initialization of malihu scrollbar
+      var windW = window.innerWidth;
+
+      if (windW < 768) {
+        $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+      } else {
+        $('.js-scrollbar').mCustomScrollbar("destroy");
+      }
     });
   </script>
 </body>
