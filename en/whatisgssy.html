@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../workspace/favicon.ico">
+    <link rel="shortcut icon" href="../workspace/favicon.png">
 
     <!-- Google Fonts -->
     <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -21,23 +21,1006 @@
     <link rel="stylesheet" href="../workspace/assets/vendor/hs-megamenu/src/hs.megamenu.css">
     <link rel="stylesheet" href="../workspace/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="../workspace/assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="../../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../../documentation/assets/vendor/prism/prism.css">
+
     <link rel="stylesheet" href="../workspace/assets/vendor/fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="../workspace/assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- CSS Front Template -->
+
+    <!-- CSS GSSY Template -->
     <link rel="stylesheet" href="../workspace/assets/css/theme.css">
 
-    <!-- CSS Front Doc -->
-    <link rel="stylesheet" href="../../documentation/assets/css/starter.css">
+
 </head>
 
 <body>
     <!-- ========== HEADER ========== -->
-    <div data-include="header"></div>
+    <header id="header" class="u-header u-header--hide-topbar u-header--sticky-top-md u-header--show-hide-md "
+        data-header-fix-moment="500" data-header-fix-effect="slide">
+
+        <div class="u-header__section">
+            <!-- Topbar -->
+            <div class="container pt-2">
+                <div class="d-flex align-items-center">
+
+                    <div class="ml-auto">
+
+                    </div>
+
+                    <ul class="list-inline ml-2 mb-0">
+
+                        <!-- Youtube Topbar -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-text-secondary"
+                                href="https://www.youtube.com/channel/UCEgr-rY3J5tuj0NM8n2lPDg" target="_blank">
+                                <span class="fab fa-youtube btn-icon__inner font-size-1 "></span>
+                            </a>
+                        </li>
+                        <!-- End Youtube Topbar -->
+
+                        <!-- WHatsApp Topbar -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-text-secondary"
+                                href="https://api.whatsapp.com/send?phone=919784742595&text=Jai Gurudev!  "
+                                target="_blank">
+                                <span class="fab fa-whatsapp btn-icon__inner font-size-1 "></span>
+                            </a>
+                        </li>
+                        <!-- End WHatsApp Topbar -->
+
+
+                        <!-- Language Login -->
+                        <li class="list-inline-item position-relative">
+                            <!-- Language Dropdown -->
+                            <a id="languageDropdownInvoker"
+                                class="btn btn-xs btn-text-secondary u-sidebar--account__toggle-bg" href="javascript:;"
+                                role="button" aria-controls="languageDropdown" aria-haspopup="true"
+                                aria-expanded="false" data-unfold-event="hover" data-unfold-target="#languageDropdown"
+                                data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300"
+                                data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp"
+                                data-unfold-animation-out="fadeOut">
+                                <span class="u-sidebar--account__toggle-text d-inline-block d-sm-none">En</span>
+                                <span class="d-none d-sm-inline-block u-sidebar--account__toggle-text">English</span>
+                                <img class="dropdown-item-icon"
+                                    src="../workspace/assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
+                            </a>
+                            <!-- End Language Dropdown -->
+
+                            <div id="languageDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right"
+                                aria-labelledby="languageDropdownInvoker" style="width: 231px;">
+                                <div class="row no-gutters">
+                                    <div class="col-6">
+                                        <a class="dropdown-item" href="../hi/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/in.svg"
+                                                alt="SVG">
+                                            Hindi
+                                        </a>
+                                        <a class="dropdown-item" href="../fr/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/fr.svg"
+                                                alt="SVG">
+                                            French
+                                        </a>
+                                        <a class="dropdown-item" href="../ru/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/ru.svg"
+                                                alt="SVG">
+                                            Russian
+                                        </a>
+                                        <a class="dropdown-item" href="../cn/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/cn.svg"
+                                                alt="SVG">
+                                            Mandarin
+                                        </a>
+                                        <a class="dropdown-item" href="../de/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/de.svg"
+                                                alt="SVG">
+                                            German
+                                        </a>
+                                        <a class="dropdown-item" href="../es/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/es.svg"
+                                                alt="SVG">
+                                            Spanish
+                                        </a>
+                                        <a class="dropdown-item" href="../bq/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/bq.svg"
+                                                alt="SVG">
+                                            Dutch
+                                        </a>
+                                        <a class="dropdown-item" href="../kn/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/in.svg"
+                                                alt="SVG">
+                                            Kannada
+                                        </a>
+
+                                        <a class="dropdown-item" href="../il/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/il.svg"
+                                                alt="SVG">
+                                            Hebrew
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a class="dropdown-item" href="../ph/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/ph.svg"
+                                                alt="SVG">
+                                            Filipino
+                                        </a>
+                                        <a class="dropdown-item" href="../ir/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/ir.svg"
+                                                alt="SVG">
+                                            Persian
+                                        </a>
+                                        <a class="dropdown-item" href="../tr/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/tr.svg"
+                                                alt="SVG">
+                                            Turkish
+                                        </a>
+                                        <a class="dropdown-item" href="../ur/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/pk.svg"
+                                                alt="SVG">
+                                            Urdu
+                                        </a>
+                                        <a class="dropdown-item" href="../gj/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/in.svg"
+                                                alt="SVG">
+                                            Gujarati
+                                        </a>
+                                        <a class="dropdown-item" href="../tm/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/in.svg"
+                                                alt="SVG">
+                                            Tamil
+                                        </a>
+                                        <a class="dropdown-item" href="../bg/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/in.svg"
+                                                alt="SVG">
+                                            Bengali
+                                        </a>
+                                        <!-- <a class="dropdown-item" href="../kn/"><img class="dropdown-item-icon"
+                                        src="../workspace/assets/vendor/flag-icon-css/flags/4x3/in.svg"
+                                        alt="SVG">
+                                    Kannada
+                                </a> -->
+                                        <a class="dropdown-item" href="../ie/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/ie.svg"
+                                                alt="SVG">
+                                            Irish
+                                        </a>
+                                        <a class="dropdown-item" href="../tel/"><img class="dropdown-item-icon"
+                                                src="../workspace/assets/vendor/flag-icon-css/flags/4x3/in.svg"
+                                                alt="SVG">
+                                            Telugu
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- <a class="dropdown-item" href="#"><img class="dropdown-item-icon"
+                            src="../workspace/assets/vendor/flag-icon-css/flags/4x3/il.svg" alt="SVG">
+                        Hebrew
+                    </a> -->
+                            </div>
+                        </li>
+                        <!-- End Language Login -->
+
+                        <!-- Contact Us Topbar -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-text-secondary" href="../en/contact.html" target="_blank">
+                                <span class="fa fa-map-marker-alt btn-icon__inner font-size-1"></span>
+                            </a>
+                        </li>
+                        <!-- End Contact Us Topbar -->
+
+                        <!-- Events & News  -->
+
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-text-secondary" href="../en/events.html" target="_blank">
+                                <span class="fas fa-bell btn-icon__inner font-size-1"></span>
+                            </a>
+                        </li>
+
+                        <!-- End Events & News  -->
+
+                    </ul>
+                </div>
+            </div>
+            <!-- End Topbar -->
+
+            <div id="logoAndNav" class="container">
+                <!-- Nav -->
+                <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+                    <!-- Logo -->
+                    <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="../en/"
+                        aria-label="GSSY">
+                        <img src="../workspace/assets/svg/logos/gssy.svg" alt="GSSY Logo">
+                    </a>
+                    <!-- End Logo -->
+
+                    <!-- Responsive Toggle Button -->
+                    <button type="button" class="navbar-toggler btn u-hamburger" aria-label="Toggle navigation"
+                        aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                        <span id="hamburgerTrigger" class="u-hamburger__box">
+                            <span class="u-hamburger__inner"></span>
+                        </span>
+                    </button>
+                    <!-- End Responsive Toggle Button -->
+
+                    <!-- Navigation -->
+                    <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+                        <ul class="navbar-nav u-header__navbar-nav">
+
+                            <!-- Button -->
+                            <li class="nav-item u-header__nav-last-item">
+                                <a href="../en/">
+                                    <i class="fas fa-home fa-lg" style="color:rgb(30,144,255);">
+                                        <!-- icon --></i>
+                                </a>
+                            </li>
+                            <!-- End Button -->
+
+                            <!-- About GSSY -->
+                            <li class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover"
+                                data-animation-in="slideInUp" data-animation-out="fadeOut" data-max-width="900px"
+                                data-position="right">
+                                <a id="aboutgssyMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                                    href="javascript:;" aria-haspopup="true" aria-expanded="false">About GSSY</a>
+
+                                <!-- About GSSY - Mega Menu -->
+                                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="aboutgssyMegaMenu">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-12">
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- What is GSSY Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/whatisgssy.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">What
+                                                                    is GSSY</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    Gurudev Siyag's Siddha
+                                                                    Yoga.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End What is GSSY Item -->
+
+                                                <!-- Who is Guru Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/whoisguru.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Who
+                                                                    is Guru</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    'Who is Guru'.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Who is Guru Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+
+                                                <!-- Shaktipat Initiation Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/shaktipatinitiation.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Shaktipat
+                                                                    Initiation</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    Shaktipat Initiation.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Shaktipat Initiation Item -->
+
+                                                <!-- Awakening of Kundalini Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/kundaliniawakening.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Awakening
+                                                                    of Kundalini</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    Kundalini Awakening.
+                                                                </small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Awakening of Kundalini Item -->
+
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+
+                                                <!-- Involuntary Yogic Movements Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/yogicmovements.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Involuntary
+                                                                    Yogic Movements</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    Involuntary Yogic
+                                                                    Movements.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Involuntary Yogic Movements Item -->
+
+                                                <!-- Benefits of GSSY Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/benefitsofgssy.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Benefits
+                                                                    of GSSY</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    the amazing benefits of
+                                                                    practising GSSY.
+                                                                </small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Benefits of GSSY Item -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End About GSSY - Mega Menu -->
+                            </li>
+                            <!-- End About GSSY -->
+
+                            <!-- Gurudev -->
+                            <li class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover"
+                                data-animation-in="slideInUp" data-animation-out="fadeOut" data-max-width="900px"
+                                data-position="right">
+                                <a id="gurudevMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                                    href="javascript:;" aria-haspopup="true" aria-expanded="false">Gurudev</a>
+
+                                <!-- Gurudev - Mega Menu -->
+                                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="gurudevMegaMenu">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-12">
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Biography of Gurudev Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/biographyofgurudev.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Gurudev's
+                                                                    Life Sketch</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    the life sketch of Gurudev
+                                                                    Siyag.
+                                                                </small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Biography of Gurudev Item -->
+
+                                                <!-- Gurudev’s divine writings Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/gurudevdivinewriting.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Gurudev’s
+                                                                    Divine Writings</span>
+                                                                <small class="u-header__promo-text">Read Gurudev's
+                                                                    Divine Writings. </small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Gurudev’s divine writings Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+
+                                                <!-- Religious Revolution in the World Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/religiousrevolutionintheworld.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Religious
+                                                                    Revolution in the World</span>
+                                                                <small class="u-header__promo-text">Book written by
+                                                                    Gurudev Siyag.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Religious Revolution in the World Item -->
+
+                                                <!-- Spiritual Revolutions in the World -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/spiritualrevolutionintheworld.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Spiritual
+                                                                    Revolution in the World</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    spiritual revolution in the world.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Spiritual Revolutions in the World Item -->
+                                            </div>
+                                        </div>
+
+                                        <!-- RELIGIOS REVOLUTION IN THE WORLD Mega Menu Banner -->
+                                        <div class="u-header__product-banner col-lg-12">
+                                            <div class="d-flex align-items-end">
+                                                <img class="img-fluid mr-4" src="../workspace/assets/svg/icons/RRW.svg"
+                                                    alt="Image Description">
+                                                <div class="u-header__product-banner-content">
+                                                    <div class="mb-4">
+                                                        <span class="u-header__product-banner-title">RELIGIOUS
+                                                            REVOLUTION
+                                                            IN THE WORLD</span>
+                                                        <p class="u-header__product-banner-text">A Book written by
+                                                            Gurudev Siyag </p>
+                                                    </div>
+                                                    <a class="btn btn-sm btn-soft-primary transition-3d-hover"
+                                                        href="../en/religiousrevolutionintheworld.html">Download
+                                                        <span class="fas fa-angle-right ml-2"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End RELIGIOS REVOLUTION IN THE WORLD Mega Menu Banner -->
+                                    </div>
+                                </div>
+                                <!-- End Gurudev - Mega Menu -->
+                            </li>
+                            <!-- End Gurudev -->
+
+                            <!-- Meditation -->
+                            <li class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover"
+                                data-animation-in="slideInUp" data-animation-out="fadeOut" data-max-width="900px"
+                                data-position="right">
+                                <a id="meditationMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                                    href="javascript:;" aria-haspopup="true" aria-expanded="false">Meditation</a>
+
+                                <!-- Meditation - Mega Menu -->
+                                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="meditationMegaMenu">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-8">
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Method of Meditation Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/methodofmeditation.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Method
+                                                                    of Meditation</span>
+                                                                <small class="u-header__promo-text">Simple steps for
+                                                                    Meditation.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Method of Meditation Item -->
+
+                                                <!-- Sanjeevani Mantra -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/sanjeewanimantra.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Sanjeevani
+                                                                    Mantra</span>
+                                                                <small class="u-header__promo-text">Listen to the
+                                                                    Sanjeevani mantra in Gurudev Siyag's
+                                                                    divine voice.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Sanjeevani Mantra Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Points to Remember Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/pointstoremember.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Points
+                                                                    to Remember</span>
+                                                                <small class="u-header__promo-text">Some points to keep
+                                                                    in mind.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Points to Remember Item -->
+
+                                                <!-- FAQ Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/faq.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">FAQ</span>
+                                                                <small class="u-header__promo-text">Frequently asked
+                                                                    questions.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End FAQ Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Disciples’s Experiences Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/discipleexperiences.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Disciples’s
+                                                                    Experiences</span>
+                                                                <small class="u-header__promo-text">What disciples have
+                                                                    to say about Gurudev Siyag's Siddha Yoga.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Disciples’s Experiences Item -->
+
+                                                <!-- Cases Cured Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/casescured.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Cases
+                                                                    Cured</span>
+                                                                <small class="u-header__promo-text">Read more about
+                                                                    cases that have been cured.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Cases Cured Item -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Gurudev Siyag small picture -->
+                                        <div class="col-lg-4 u-header__promo d-none d-lg-block text-center">
+                                            <a class="d-block u-header__promo-inner">
+                                                <div class="position-relative">
+                                                    <img class="img-fluid rounded mb-3"
+                                                        src="../workspace/assets/img/380x227/img7.jpg"
+                                                        alt="Image Description">
+                                                </div>
+
+                                                <span class="text-secondary font-size-1">Samarth Sadgurudev Shri Ramlal
+                                                    Siyag</span>
+                                            </a>
+                                        </div>
+                                        <!-- End Gurudev Siyag small picture -->
+                                    </div>
+                                </div>
+                                <!-- End Meditation - Mega Menu -->
+                            </li>
+                            <!-- End Meditation -->
+
+                            <!-- Prophecies -->
+                            <li class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover"
+                                data-animation-in="slideInUp" data-animation-out="fadeOut" data-max-width="900px"
+                                data-position="right">
+                                <a id="propheciesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                                    href="javascript:;" aria-haspopup="true" aria-expanded="false">Prophecies</a>
+
+                                <!-- Prophecies - Mega Menu -->
+                                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="propheciesMegaMenu">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-12">
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- What are the World's Prophecies -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/worldprophecies.html">
+                                                        <div class="media align-items-center">
+
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">What
+                                                                    are the World's Prophecies</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    world prophecies.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End What are the World's Prophecies -->
+
+                                                <!-- Signs of the Next Prophet Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/signsofnextprophet.html">
+                                                        <div class="media align-items-center">
+
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Signs
+                                                                    of the Next Prophet</span>
+                                                                <small class="u-header__promo-text">Prophecies about the
+                                                                    coming of an Avatar or Prophet.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Signs of the Next Prophet Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Prophecies About Gurudev Siyag Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/sriaurobindo.html">
+                                                        <div class="media align-items-center">
+
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Predictions
+                                                                    by Maharishi Aurobindo and Shri Maa</span>
+                                                                <small class="u-header__promo-text">Learn about how
+                                                                    Maharishi Aurobindo and Shri Maa had foreseen the
+                                                                    incarnation of Gurudev.
+                                                                </small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Prophecies About Gurudev Siyag Item -->
+
+                                                <!-- Meaning of Prophecies in the Bible Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/biblepropheciesmeaning.html">
+                                                        <div class="media align-items-center">
+
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Meaning
+                                                                    of Prophecies in the Bible</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    meaning of the prophecies in the Bible.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Meaning of Prophecies in the Bible Item -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Prophecies - Mega Menu -->
+                            </li>
+                            <!-- End Prophecies -->
+
+                            <!-- Media -->
+                            <li class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover"
+                                data-animation-in="slideInUp" data-animation-out="fadeOut" data-max-width="900px"
+                                data-position="right">
+                                <a id="mediaMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                                    href="javascript:;" aria-haspopup="true" aria-expanded="false">Media</a>
+
+                                <!-- Media - Mega Menu -->
+                                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="mediaMegaMenu">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-12">
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Photo Gallery Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/photogallery.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Photo
+                                                                    Gallery</span>
+                                                                <small class="u-header__promo-text">Explore the photo
+                                                                    gallery.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Photo Gallery Item -->
+
+                                                <!-- Video Gallery Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/videogallery.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Video
+                                                                    Gallery</span>
+                                                                <small class="u-header__promo-text">Watch Gurudev
+                                                                    Siyag’s discourses.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Video Gallery Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Audio Gallery Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/audiogallery.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Audio
+                                                                    Gallery</span>
+                                                                <small class="u-header__promo-text">Listen to Gurudev’s
+                                                                    discourses in his mesmerizing voice.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Audio Gallery Item -->
+
+                                                <!-- GSSY in News -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/gssynews.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">GSSY
+                                                                    in News</span>
+                                                                <small class="u-header__promo-text">Find out what media
+                                                                    has to say about GSSY.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End GSSY in News Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Spiritual Science Magazine Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/spiritualscience.html">
+                                                        <div class="media align-items-center">
+
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover transition-3d-hover">Spiritual
+                                                                    Science Magazine<span
+                                                                        class="badge badge-success badge-pill ml-1 transition-3d-hover">Subscribe</span></span>
+                                                                <small class="u-header__promo-text">A monthly magazine
+                                                                    published by AVSK, Jodhpur. It includes amazing
+                                                                    disciple’s experiences, Gurudev Siyag’s hand written
+                                                                    articles and much more.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Spiritual Science Magazine Item -->
+
+                                                <!-- AVSK Calendar -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/avskcalendar.html">
+                                                        <div class="media align-items-center">
+
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">AVSK
+                                                                    Calendar</span>
+                                                                <small class="u-header__promo-text">Explore Adhyatma
+                                                                    Vigyan Satsang Kendra yearly Calendars.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End AVSK Calendar Item -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Promotional Material Mega Menu Banner -->
+                                        <!-- <div class="u-header__product-banner col-lg-12">
+                            <div class="d-flex align-items-end">
+                                <img class="img-fluid mr-4" src="../workspace/assets/svg/icons/icon-28.svg"
+                                    alt="Image Description">
+                                <div class="u-header__product-banner-content">
+                                    <div class="mb-4">
+                                        <span class="u-header__product-banner-title">Promotional
+                                            Material</span>
+                                        <p class="u-header__product-banner-text">Spread the word </p>
+                                    </div>
+                                    <a class="btn btn-sm btn-soft-primary transition-3d-hover"
+                                        href="../en/promotion.html">Download <span
+                                            class="fas fa-angle-right ml-2"></span></a>
+                                </div>
+                            </div>
+                        </div> -->
+                                        <!-- End Promotional Material Mega Menu Banner -->
+                                    </div>
+                                </div>
+                                <!-- End Media - Mega Menu -->
+                            </li>
+                            <!-- End Media -->
+
+                            <!-- Others -->
+                            <li class="nav-item hs-has-mega-menu u-header__nav-item" data-event="hover"
+                                data-animation-in="slideInUp" data-animation-out="fadeOut" data-max-width="900px"
+                                data-position="right">
+                                <a id="meditationMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle"
+                                    href="javascript:;" aria-haspopup="true" aria-expanded="false">Others</a>
+
+                                <!-- Others - Mega Menu -->
+                                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="meditationMegaMenu">
+                                    <div class="row no-gutters">
+                                        <!-- AVSK Ashram small picture -->
+                                        <div class="col-lg-4  d-none d-lg-block text-center">
+                                            <a class="d-block ">
+                                                <div class="position-relative">
+                                                    <img class="img-fluid  "
+                                                        src="../workspace/assets/img/500x805/img2.jpg"
+                                                        alt="AVSK Ashram Description">
+                                                </div>
+
+
+                                            </a>
+                                        </div>
+                                        <!-- End AVSK Ashram small picture -->
+                                        <div class="col-lg-8">
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- About AVSK Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/aboutavsk.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">About
+                                                                    AVSK</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    Adhyatma Vigyan Satsang Kendra,Jodhpur.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End About AVSK Item -->
+
+                                                <!-- Guru Dakshina -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/gurudakshina.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Guru
+                                                                    Dakshina</span>
+                                                                <small class="u-header__promo-text">A disciple must
+                                                                    acknowledge his gratitude for the Guru’s altruistic
+                                                                    love
+                                                                    and help by offering him a Dakshina, a token of
+                                                                    gratitude.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Guru Dakshina Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Guru Poornima Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/gurupoornima.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Guru
+                                                                    Poornima Celebration</span>
+                                                                <small class="u-header__promo-text">Guru Poornima is a
+                                                                    festival that is celebrated on the full moon day in
+                                                                    the
+                                                                    Hindu month of ‘Ashadh’ (June to August) as per
+                                                                    Hindu
+                                                                    calendar. Find out more about it.</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Guru Poornima Item -->
+
+                                                <!-- Incarnation Day Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/incarnationday.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Gurudev
+                                                                    Siyag's Incarnation Day</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    Gurudev Siyag's Incarnation Day celebration</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Incarnation Day Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Gurudev's Discourse Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../en/gurudevdiscourses.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Gurudev's
+                                                                    Discourse</span>
+                                                                <small class="u-header__promo-text">Read Gurudev Siyag's
+                                                                    discourse</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Gurudev's Discourse Item -->
+
+                                                <!-- Disappearance Day Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link"
+                                                        href="../en/babagangainathjiyogidisappearance.html">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-body">
+                                                                <span
+                                                                    class="u-header__promo-title transition-3d-hover">Baba
+                                                                    Gangainathji Yogi’s Disappearance Day</span>
+                                                                <small class="u-header__promo-text">Find out more about
+                                                                    Baba
+                                                                    Gangainathji Yogi’s (Gurudev Siyag's Guru)
+                                                                    Disappearance
+                                                                    Day</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Disappearance Day Item -->
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <!-- End Others - Mega Menu -->
+                            </li>
+                            <!-- End Others -->
+
+
+                        </ul>
+                    </div>
+                    <!-- End Navigation -->
+                </nav>
+                <!-- End Nav -->
+            </div>
+        </div>
+    </header>
     <!-- ========== END HEADER ========== -->
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
@@ -264,35 +1247,19 @@
                     <!-- End List -->
 
                 </div>
-                <div class="d-md-flex justify-content-md-center text-center align-items-md-center ">
-                    <h2 class="text-secondary font-size-1 font-weight-medium text-uppercase mb-0">
-                        Share:</h2>
-
-                    <a class="btn btn-md btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2" href="#">
-                        <span class="fab fa-facebook-f btn-icon__inner"></span>
-                    </a>
-                    <a class="btn btn-md btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2" href="#">
-                        <span class="fab fa-twitter btn-icon__inner"></span>
-                    </a>
-                    <a class="btn btn-md btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2" href="#">
-                        <span class="fab fa-instagram btn-icon__inner"></span>
-                    </a>
-                    <a class="btn btn-md btn-icon btn-soft-secondary btn-bg-transparent rounded-circle ml-2" href="#">
-                        <span class="fab fa-whatsapp btn-icon__inner"></span>
-                    </a>
-                </div>
+                <!-- Share-->
 
                 <div class="w-lg-90 d-md-flex justify-content-md-center align-items-md-center ">
                     <div class=" d-none d-lg-block space-bottom-0 pl-9 ">
                         <p class="h5 font-weight-normal">Follow:
-                            <a class="btn btn-facebook btn-sm text-white shadow transition-3d-hover mb-1 mb-sm-0"
-                                href="#">Facebook</a>
+                            <a class="btn btn-facebook btn-sm text-white shadow transition-3d-hover ml-2 mb-1 mb-sm-0"
+                                href="https://www.facebook.com/GurudevSiyagAVSK/">Facebook</a>
                             <a class="btn btn-twitter btn-sm text-white shadow transition-3d-hover mb-1 mb-sm-0"
-                                href="#">Twitter</a>
+                                href="https://twitter.com/SiyagYoga">Twitter</a>
                             <a class="btn btn-instagram btn-sm text-white shadow transition-3d-hover mb-1 mb-sm-0"
-                                href="#">Instagram</a>
+                                href="https://www.instagram.com/gurudevsiyag/">Instagram</a>
                             <a class="btn btn-google btn-sm text-white shadow transition-3d-hover mb-1 mb-sm-0"
-                                href="#">Youtube</a>
+                                href="https://www.youtube.com/channel/UCEgr-rY3J5tuj0NM8n2lPDg">Youtube</a>
                         </p>
                     </div>
                 </div>
@@ -301,9 +1268,271 @@
         <!-- End Career Detail Section -->
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
-
     <!-- ========== FOOTER ========== -->
-    <div data-include="footer"></div>
+    <footer class="gradient-half-primary-v4">
+        <div class="container">
+
+            <div class="row justify-content-md-between space-2">
+
+                <div class="col-6 col-sm-4 col-lg-2 order-lg-2 mb-7 mb-lg-0">
+                    <h4 class="h6 text-white font-weight-semi-bold">About GSSY</h4>
+
+                    <!-- List Group -->
+                    <ul
+                        class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+                        <li><a class="list-group-item list-group-item-action text-white"
+                                href="../en/shaktipatinitiation.html">Shaktipat Initiation</a></li>
+                        <li><a class="list-group-item list-group-item-action text-white"
+                                href="../en/kundaliniawakening.html">Kundalini Awakening</a></li>
+                        <li><a class="list-group-item list-group-item-action text-white"
+                                href="../en/benefitsofgssy.html">Benefits of GSSY</a></li>
+                        <li><a class="list-group-item list-group-item-action text-white" href="../en/faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                    <!-- End List Group -->
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2 order-lg-3 mb-7 mb-lg-0">
+                    <h4 class="h6 text-white font-weight-semi-bold">About Gurudev</h4>
+
+                    <!-- List Group -->
+                    <ul
+                        class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+                        <li><a class="list-group-item list-group-item-action text-white"
+                                href="../en/biographyofgurudev.html">
+                                Gurudev’s biography</a></li>
+                        <li><a class="list-group-item list-group-item-action text-white"
+                                href="../en/gurudevdivinewriting.html">Gurudev’s divine writings</a>
+                        </li>
+                        <li><a class="list-group-item list-group-item-action text-white"
+                                href="../en/sriaurobindo.html">Predictions</a></li>
+                        <li><a class="list-group-item list-group-item-action text-white"
+                                href="../en/videogallery.html">Video gallery</a>
+                        </li>
+                    </ul>
+                    <!-- End List Group -->
+                </div>
+
+                <div class="col-sm-4 col-lg-2 order-lg-4 mb-7 mb-lg-0">
+                    <h4 class="h6 text-white font-weight-semi-bold">Contact Us</h4>
+
+                    <!-- List Group -->
+                    <ul
+                        class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+                        <li><a class="list-group-item list-group-item-action text-white"
+                                href="../en/discipleexperiences.html">Disciples
+                                Experiences</a></li>
+                        <li><a class="list-group-item list-group-item-action text-white" href="../en/contact.html">Share
+                                your
+                                experiences </a></li>
+                        <li><a class="list-group-item list-group-item-action text-white" href="../en/sitemap.html">Site
+                                Map</a></li>
+                        <li><a class="list-group-item list-group-item-action text-white"
+                                href="../en/contact.html">Contact
+                                Us</a></li>
+                    </ul>
+                    <!-- End List Group -->
+                </div>
+
+                <div class="col-sm-6 col-md-5 col-lg-3 order-lg-5 mb-6 mb-sm-0">
+                    <h4 class="h6 text-white font-weight-semi-bold">Events</h4>
+
+                    <!-- Events Group -->
+                    <ul class="list-unstyled mt-3 mb-0">
+                        <li class="mb-3">
+                            <a class="d-block bg-primary text-white shadow-primary-lg rounded-pill p-1"
+                                href="../en/events.html">
+                                <div class="media align-items-center">
+                                    <span class="btn btn-xs btn-soft-white btn-pill mr-2">24/11</span>
+                                    <div class="media-body">
+                                        <span class="font-size-1">94th Incarnation
+                                            Day</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="d-block bg-primary text-white shadow-primary-lg rounded-pill p-1"
+                                href="../en/events.html">
+                                <div class="media align-items-center">
+                                    <span class="btn btn-xs btn-soft-white btn-pill mr-2">21/12</span>
+                                    <div class="media-body">
+                                        <span class="font-size-1">Disappearance day
+                                            of Baba Shri Gangainathji Yogi</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Events -->
+                </div>
+
+                <div class="col-sm-6 col-md-5 col-lg-3 order-lg-1">
+                    <div class="d-flex align-self-start flex-column h-100">
+                        <!-- Logo -->
+                        <!-- <a class="d-flex align-items-center mb-3" href="../en/" aria-label="GSSY">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                        y="0px" width="36px" height="36px" viewBox="0 0 46 46" xml:space="preserve"
+                                        style="margin-bottom: 0;">
+                                        <path fill="#E1E4EA" opacity=".65"
+                                            d="M23,41.1L23,41.1c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C41,33,32.9,41.1,23,41.1z" />
+                                        <path class="fill-white" opacity=".5"
+                                            d="M28,36L28,36c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3C43,0.1,46,3.1,46,6.7v11.4C46,28,38,36,28,36z" />
+                                        <path class="fill-white" opacity=".7"
+                                            d="M18,46.1L18,46.1c-10,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C35.9,38.1,27.9,46.1,18,46.1z" />
+                                        <path class="fill-primary"
+                                            d="M17.4,34.1V18.4h10.2v2.9h-6.4v3.4H26v2.9h-4.8v6.5H17.4z" />
+                                    </svg>
+                                    <span class="brand brand-light">GSSY</span>
+                                </a> -->
+                        <!-- End Logo -->
+
+                        <!-- Logo -->
+                        <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center pb-5" href="../en/"
+                            aria-label="GSSY">
+                            <img src="../workspace/assets/svg/logos/gssy-white.svg" alt="GSSY Logo">
+                        </a>
+                        <!-- End Logo -->
+
+                        <p class="small text-white">A registered organization in India 09/1993/ 10-05-1993 ©
+                            1997-2019 Adhyatma Vigyan Satsang Kendra, Jodhpur (AVSK). All rights reserved.</p>
+
+
+
+                        <!-- Social Networks -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-icon btn-soft-light roundedt"
+                                    href="https://www.facebook.com/GurudevSiyagAVSK/" target="_blank">
+                                    <span class="fab fa-facebook-f btn-icon__inner btn- "></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-icon btn-soft-light roundedt"
+                                    href="https://twitter.com/SiyagYoga" target="_blank">
+                                    <span class="fab fa-twitter btn-icon__inner"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-icon btn-soft-light rounded"
+                                    href="https://www.youtube.com/channel/UCEgr-rY3J5tuj0NM8n2lPDg" target="_blank">
+                                    <span class="fab fa-youtube btn-icon__inner "></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-icon btn-soft-light rounded"
+                                    href="https://api.whatsapp.com/send?phone=919784742595&text=Jai Gurudev! "
+                                    target="_blank">
+                                    <span class="fab fa-whatsapp btn-icon__inner"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-icon btn-soft-light rounded"
+                                    href="https://t.me/joinchat/AAAAAE5jwG1F7rCUFsoWTA" target="_blank">
+                                    <span class="fab fa-telegram-plane btn-icon__inner"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Social Networks -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="row justify-content-lg-between align-items-md-center space-0 space-bottom-1">
+                <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
+                    <h4 class="text-white font-weight-medium mb-1">Meditate on Gurudev Siyag's picture!</h4>
+                    <p class="text-white mb-0">Get relieved from <span class="text-warning">
+                            <span class="u-text-animation-v2 u-text-animation-v2--typing"></span>
+                        </span></p>
+                </div>
+
+                <div class="col-md-6 col-lg-5 text-md-right">
+                    <a class="js-fancybox btn btn-success btn-wide transition-3d-hover mb-1 mb-sm-0" href="javascript:;"
+                        data-src="//youtube.com/zJoL87Uf2rg&t" data-speed="700" data-animate-in="zoomIn"
+                        data-animate-out="zoomOut"
+                        data-caption="Listen to the Sanjeevani Mantra in Gurudev Siyag's divine voice.">Sanjeevani
+                        Mantra
+                    </a>
+
+                    <a class="btn text-primary btn-white btn-wide transition-3d-hover mb-1 mb-sm-0"
+                        href="../en/methodofmeditation.html">Method of Meditation</a>
+                </div>
+            </div>
+            <!-- End CTA -->
+
+            <hr class="opacity-md my-0">
+
+            <div class="row space-2">
+                <div class="col-md-4 mb-7 mb-md-0">
+                    <!-- Call -->
+                    <div class="media">
+                        <span class="btn btn-icon btn-soft-white rounded-circle mr-3">
+                            <span class="fas fa-phone btn-icon__inner"></span>
+                        </span>
+                        <div class="media-body">
+                            <h4 class="h6 text-white font-weight-normal mb-0">Call us</h4>
+                            <span class="d-block text-white font-size-1">+91 (291) 275-3699</span>
+                            <a href="https://api.whatsapp.com/send?phone=919784742595&text=Jai Gurudev! "
+                                target="_blank">
+                                <span class="text-white font-size-1">+91 9784742595</span>
+                                <button type="button"
+                                    class="btn btn-icon btn-xs btn-success rounded-circle transition-3d-hover">
+                                    <span class="fab fa-whatsapp btn-icon__inner"> </span>
+                                </button>
+
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Call -->
+                </div>
+
+                <div class="col-md-4 mb-7 mb-md-0">
+                    <!-- Email -->
+                    <div class="media">
+                        <span class="btn btn-icon btn-soft-white rounded-circle mr-3">
+                            <span class="fas fa-envelope btn-icon__inner"></span>
+                        </span>
+                        <div class="media-body">
+                            <h4 class="h6 text-white font-weight-normal mb-0">Email us</h4>
+                            <span class="d-block text-white font-size-1">avsk@the-comforter.org</span>
+                        </div>
+                    </div>
+                    <!-- End Email -->
+                </div>
+
+                <div class="col-md-4">
+                    <!-- Address -->
+                    <div class="media">
+                        <span class="btn btn-icon btn-soft-white rounded-circle mr-3">
+                            <span class="fas fa-map-marker-alt btn-icon__inner"></span>
+                        </span>
+                        <div class="media-body">
+                            <h4 class="h6 text-white font-weight-normal mb-0">Address</h4>
+                            <span class="d-block text-white font-size-1">Adhyatma Vigyan Satsang Kendra</span>
+                            <span class="d-block text-white font-size-1">Near Hotel Lariya, Chaupasani</span>
+                            <span class="d-block text-white font-size-1">Post Box No. 41</span>
+                            <span class="d-block text-white font-size-1">Jodhpur, Rajasthan - 342 001, INDIA</span>
+                        </div>
+                    </div>
+                    <!-- End Address -->
+                </div>
+            </div>
+
+            <div class="row ">
+                <p class="small col-md-12 text-white">The website <a class="link-muted text-white"
+                        href="../en/">www.the-comforter.org</a> was launched by Gurudev Shri
+                    Ramlalji Siyag on Dec 25,
+                    1997
+                    for the welfare of mankind. It is the only bonafide website of AVSK, Jodhpur. Adhyatma Vigyan
+                    Satsang Kendra, Jodhpur was founded by Gurudev on May 5, 1993
+
+                </p>
+            </div>
+        </div>
+
+
+    </footer>
     <!-- ========== END FOOTER ========== -->
 
     <!-- ========== SECONDARY CONTENTS ========== -->
@@ -333,14 +1562,10 @@
     <script src="../workspace/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="../workspace/assets/vendor/typed.js/lib/typed.min.js"></script>
     <script src="../workspace/assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-    <script src="../../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
-    <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
-    <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
-    <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
-    <script src="../../documentation/assets/vendor/prism/prism.js"></script>
 
 
-    <!-- JS Front -->
+
+    <!-- JS GSSY -->
     <script src="../workspace/assets/js/hs.core.js"></script>
     <script src="../workspace/assets/js/components/hs.header.js"></script>
     <script src="../workspace/assets/js/components/hs.unfold.js"></script>
@@ -361,7 +1586,7 @@
             var includes = $('[data-include]');
             jQuery.each(includes, function () {
                 var file = '../en/' + $(this).data('include') + '.html';
-                debugger;
+
                 $(this).load(file);
             });
         });
@@ -385,6 +1610,15 @@
             // initialization of header
             $.HSCore.components.HSHeader.init($('#header'));
 
+            //Disable cut copy paste
+            $(document).bind('cut copy paste', function (e) {
+                e.preventDefault();
+            });
+
+            //Disable mouse right click
+            $(document).on("contextmenu", function (e) {
+                return false;
+            });
             // initialization of unfold component
             $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
                 afterOpen: function () {
@@ -432,6 +1666,24 @@
             $.HSCore.components.HSGoTo.init('.js-go-to');
         });
     </script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script defer src="/__/firebase/7.6.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script defer src="/__/firebase/7.6.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <!-- <script defer src="/__/firebase/7.6.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.6.0/firebase-firestore.js"></script> -->
+
+    <!-- Previously loaded Firebase SDKs -->
+
+    <!-- Initialize Firebase -->
+    <script defer src="/__/firebase/init.js"></script>
+
+   
 </body>
 
 </html>

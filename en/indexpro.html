@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="../workspace/favicon.ico">
+  <link rel="shortcut icon" href="../workspace/favicon.png">
 
   <!-- Google Fonts -->
   <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -28,10 +28,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- CSS Front Template -->
+  <!-- CSS GSSY Template -->
   <link rel="stylesheet" href="../workspace/assets/css/theme.css">
 
-  <!-- CSS Front Doc -->
+  <!-- CSS GSSY Doc -->
   <link rel="stylesheet" href="../../documentation/assets/css/starter.css">
 </head>
 
@@ -67,14 +67,14 @@
           <!-- Fancybox -->
           <a class="js-fancybox btn btn-outline-secondary btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 mr-sm-2"
             href="javascript:;" data-src="//vimeo.com/167434033" data-speed="700" data-animate-in="zoomIn"
-            data-animate-out="zoomOut" data-caption="Front - Responsive Website Template">
+            data-animate-out="zoomOut" data-caption="GSSY - Responsive Website Template">
             <small class="fas fa-play mr-2"></small>
             Play Sanjeevani Mantra
           </a>
           <!-- End Fancybox -->
 
           <a class="btn btn-primary btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0"
-            href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/"
+            href="https://themes.getbootstrap.com/product/GSSY-multipurpose-responsive-template/"
             target="_blank">Method of Meditation</a>
         </div>
 
@@ -205,7 +205,7 @@
               cancer, hepatitis-B, etc and even genetic diseases like hemophilia. </p>
 
             <a class="btn btn-xs btn-soft-success btn-pill shadow-soft "
-              href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
+              href="https://themes.getbootstrap.com/product/GSSY-multipurpose-responsive-template/" target="_blank">
               Read More
               <span class="fas fa-angle-right ml-2"></span>
             </a>
@@ -224,7 +224,7 @@
               from all types of mental afflictions.</p>
 
             <a class="btn btn-xs btn-soft-primary btn-pill shadow-soft "
-              href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
+              href="https://themes.getbootstrap.com/product/GSSY-multipurpose-responsive-template/" target="_blank">
               Read More
               <span class="fas fa-angle-right ml-2"></span>
             </a>
@@ -243,7 +243,7 @@
               addictions and brings about an overall well being.</p>
 
             <a class="btn btn-xs btn-soft-danger btn-pill shadow-soft"
-              href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
+              href="https://themes.getbootstrap.com/product/GSSY-multipurpose-responsive-template/" target="_blank">
               Read More
               <span class="fas fa-angle-right ml-2"></span>
             </a>
@@ -623,7 +623,7 @@
             class="btn btn-icon btn-sm btn-soft-primary rounded-circle shadow-soft transition-3d-hover">
             <span class="fas fa-angle-right btn-icon__inner"></span>
           </button>
-          <span class="text-secondary">FAQ's</span>
+          <span class="text-secondary">FAQ</span>
         </a>
       </div>
       <!-- End Link -->
@@ -881,7 +881,7 @@
   <script src="../../documentation/assets/vendor/prism/prism.js"></script>
 
 
-  <!-- JS Front -->
+  <!-- JS GSSY -->
   <script src="../workspace/assets/js/hs.core.js"></script>
   <script src="../workspace/assets/js/components/hs.header.js"></script>
   <script src="../workspace/assets/js/components/hs.unfold.js"></script>
@@ -902,7 +902,7 @@
       var includes = $('[data-include]');
       jQuery.each(includes, function () {
         var file = '../en/' + $(this).data('include') + '.html';
-        debugger;
+        
         $(this).load(file);
       });
     });
@@ -972,7 +972,25 @@
       // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
     });
-  </script>
+ </script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script defer src="/__/firebase/7.6.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script defer src="/__/firebase/7.6.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <!-- <script defer src="/__/firebase/7.6.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.6.0/firebase-firestore.js"></script> -->
+
+    <!-- Previously loaded Firebase SDKs -->
+
+    <!-- Initialize Firebase -->
+    <script defer src="/__/firebase/init.js"></script>
+
+   
 </body>
 
 </html>
