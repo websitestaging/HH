@@ -10,18 +10,18 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 // Submit form
 function submitForm(e) {
     e.preventDefault();
-
+ 
     // Get values
-    var firstName = getInputVal('firstName');
-    var lastName = getInputVal('lastName');
-    var countryname = getInputVal('countryname');
+    var f = getInputVal('f');
+    var l = getInputVal('l');
+    var cy = getInputVal('cy');
     var City = getInputVal('City');
-    var emailAddress = getInputVal('emailAddress');
-    var phoneNumber = getInputVal('phoneNumber');
+    var e = getInputVal('e');
+    var m = getInputVal('m');
     var message = getInputVal('message');
 
     // Save message
-    saveMessage(firstName, lastName, countryname, City, emailAddress, phoneNumber, message);
+    saveMessage(f, l, cy, City, e, m, message);
 
     // Show alert
     document.querySelector('.alert').style.display = 'block';
@@ -41,15 +41,15 @@ function getInputVal(id) {
 }
 
 // Save message to firebase
-function saveMessage(firstName, lastName, countryname, City, emailAddress, phoneNumber, message) {
+function saveMessage(f, l, cy, City, e, m, message) {
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
-        firstName: firstName,
-        lastName: lastName,
-        countryname: countryname,
+        f: f,
+        l: l,
+        cy: cy,
         City: City,
-        emailAddress: emailAddress,
-        phoneNumber: phoneNumber,
+        e: e,
+        m: m,
         message: message
     });
 }
